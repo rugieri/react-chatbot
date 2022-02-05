@@ -1,5 +1,7 @@
 # React-Chatbot
 
+This chatbot it's built using react-chatbot-kit.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
