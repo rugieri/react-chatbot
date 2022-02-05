@@ -18,3 +18,5 @@ class ActionProvider {
     this.updateChatbotState(greetingMessage);
   }
 }
+
+export default ActionProvider;
