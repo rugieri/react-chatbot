@@ -1,21 +1,22 @@
-import React from 'react';
-import Chatbot from 'react-chatbot-kit';
-import './App.css';
+import React from "react";
+import Chatbot from "react-chatbot-kit";
 
-import ActionProvider from './ActionProvider';
-import MessageParser from './MessageParser';
-import config from './config';
+import config from "./chatbot/config";
+import ActionProvider from "./chatbot/ActionProvider";
+import MessageParser from "./chatbot/MessageParser";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div style={{ maxWidth: "300px" }}>
         <Chatbot
           config={config}
           actionProvider={ActionProvider}
           messageParser={MessageParser}
         />
-      </header>
+      </div>
     </div>
   );
 }
