@@ -35,6 +35,26 @@ const config = {
         ],
       },
     },
+    {
+      widgetName: "pythonQuiz",
+      widgetFunc: (props) => <Quiz {...props} />,
+      props: {
+        questions: [
+          {
+            question: "Mention three characteristics of a Python closure ",
+            answer:
+              "Three characteristics of a Python closure are: it is a nested function. it has access to a free variable in outer scope. it is returned from the enclosing function.",
+            id: 1,
+          },
+          {
+            question: "What is meant by recurrence relation?",
+            answer:
+              "A recurrence relation is an equation that defines a sequence based on a rule that gives the next term as a function of the previous term(s)",
+            id: 2,
+          },
+        ],
+      },
+    },
   ],
 };
 

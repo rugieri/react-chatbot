@@ -17,6 +17,15 @@ class ActionProvider {
     );
     this.addMessageToState(message);
   };
+  handlePythonQuiz = () => {
+    const message = this.createChatBotMessage(
+      "Here is your quiz, good luck!!!",
+      {
+        widget: "pythonQuiz",
+      }
+    );
+    this.addMessageToState(message);
+  };
 
   addMessageToState = (message) => {
     this.setState((prevState) => ({
