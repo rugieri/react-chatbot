@@ -16,6 +16,9 @@ class MessageParser {
     if (lowercase.includes("python") || lowercase.includes("py")) {
       this.actionProvider.handlePythonQuiz();
     }
+    if (lowercase.includes("elixir") || lowercase.includes("elx")) {
+      this.actionProvider.handleElixirQuiz();
+    }
   }
 }
 export default MessageParser;

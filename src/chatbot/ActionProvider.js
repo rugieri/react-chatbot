@@ -26,6 +26,15 @@ class ActionProvider {
     );
     this.addMessageToState(message);
   };
+  handleElixirQuiz = () => {
+    const message = this.createChatBotMessage(
+      "Here is your quiz, good luck!!!",
+      {
+        widget: "elixirQuiz",
+      }
+    );
+    this.addMessageToState(message);
+  };
 
   addMessageToState = (message) => {
     this.setState((prevState) => ({

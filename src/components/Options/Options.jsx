@@ -13,7 +13,7 @@ const Options = (props) => {
       handler: props.actionProvider.handlePythonQuiz,
       id: 2,
     },
-    { text: "Golang", handler: () => {}, id: 3 },
+    { text: "Elixir", handler: props.actionProvider.handleElixirQuiz, id: 3 },
   ];
   const buttonsMarkup = options.map((option) => (
     <button key={option.id} onClick={option.handler} className="option-button">

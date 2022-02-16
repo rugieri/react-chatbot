@@ -55,6 +55,26 @@ const config = {
         ],
       },
     },
+    {
+      widgetName: "elixirQuiz",
+      widgetFunc: (props) => <Quiz {...props} />,
+      props: {
+        questions: [
+          {
+            question: "What are the features of Elixir?",
+            answer:
+              "Scalability, Fault Tolerance, Functional Programming, Build Tools, Erlang Compatibility.",
+            id: 1,
+          },
+          {
+            question: "Which platform is used to run Elixir?",
+            answer:
+              "BEAM(Erlang virtual machine) platform is used to run Elixir",
+            id: 2,
+          },
+        ],
+      },
+    },
   ],
 };
 
